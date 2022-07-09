@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="./Estilos/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="calculator">
+            <form action="" onsubmit="calculate(event)">
+                <span id="display">  </span>
+
+                <article id="buttonsGrid">
+                    <div id="numbersGrid">
+                        <button type="button" class="operatorButton" onclick="erase()"> C </button>
+                        <button class="operatorButtonOff"> </button>
+                        <button class="operatorButtonOff"> </button>
+                        <button type="button" class="numberButton" onclick="addNumber('7')"> 7 </button>
+                        <button type="button" class="numberButton" onclick="addNumber('8')"> 8 </button>
+                        <button type="button" class="numberButton" onclick="addNumber('9')"> 9 </button>
+                        <button type="button" class="numberButton" onclick="addNumber('4')"> 4 </button>
+                        <button type="button" class="numberButton" onclick="addNumber('5')"> 5 </button>
+                        <button type="button" class="numberButton" onclick="addNumber('6')"> 6 </button>
+                        <button type="button" class="numberButton" onclick="addNumber('1')"> 1 </button>
+                        <button type="button" class="numberButton" onclick="addNumber('2')"> 2 </button>
+                        <button type="button" class="numberButton" onclick="addNumber('3')"> 3 </button>
+                        <button class="numberButtonOff"> </button>
+                        <button type="button" class="numberButton" onclick="addNumber('0')"> 0 </button>
+                        <button class="numberButtonOff"> </button>
+                    </div>
+                    <div id="operatorsGrid"> 
+                        <button type="button" class="operatorButton" onclick="addOperador('/')"> / </button>
+                        <button type="button" class="operatorButton" onclick="addOperador('*')"> x </button>
+                        <button type="button" class="operatorButton" onclick="addOperador('+')"> + </button>
+                        <button type="button" class="operatorButton" onclick="addOperador('-')"> - </button>
+                        <button type="button" class="operatorButton" onclick="addOperador('x^y')"> x^y </button>
+                        <button type="submit" class="operatorButton" onclick="calculate()"> = </button>
+                    </div>
+                </article>
+            </form>
+        </section>
+    </body>
+
+    <script src="scripts/codigo.js"></script>
+</html>
